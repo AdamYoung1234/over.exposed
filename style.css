@@ -23,7 +23,7 @@ body {
 .content {
   display: flex;
   width: 100vw;
-  height: 100vh;
+  min-height: -webkit-fill-available;
   place-items: center;
   background-image: url('/public/background.jpg');
   background-size: cover;
