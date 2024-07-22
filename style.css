@@ -36,6 +36,11 @@ body {
   justify-content: center;
 }
 
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 h1 {
   text-align: center;
   font-size: 2.8rem;
@@ -49,6 +54,8 @@ h1 {
   @media only screen and (max-width: 500px) {
     font-size: 1.5rem;
   }
+
+  animation: fadeIn 3s;
 }
 
 .footer {
