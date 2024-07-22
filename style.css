@@ -10,9 +10,14 @@
 
 body {
   margin: 0;
+  padding: 0;
   display: flex;
-  place-items: center;
   min-width: 380px;
+  flex-direction: column;
+
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .content {
@@ -40,4 +45,20 @@ h1 {
   @media only screen and (max-width: 500px) {
     font-size: 2rem;
   }
+}
+
+.footer {
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  justify-content: right;
+  font-size: 0.6rem;
+  color: #e1e1e1;
+  bottom: 0px;
+  margin: 0;
+}
+
+.footer-content {
+  margin: 0;
+  padding: 0.5rem;
 }
