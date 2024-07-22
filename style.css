@@ -1,0 +1,38 @@
+:root {
+  font-family: dosis, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #e1e1e1;
+  letter-spacing: 15px;
+}
