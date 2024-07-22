@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,11 +13,21 @@
     <title>over.exposed</title>
   </head>
   <body>
-    <div class="content">
+    <div id="content" class="content">
       <h1>over.exposed</h1>
       <div class="footer">
         <div class="footer-content">&copy; 2024 Chen Yang</div>
       </div>
     </div>
   </body>
+  <script type="text/javascript">
+    const userAgent = navigator.userAgent.toLowerCase();
+    const content = document.querySelector("div#content");
+    if (
+      userAgent.indexOf("safari") != -1 &&
+      userAgent.indexOf("chrome") == -1
+    ) {
+      content.className += " safari";
+    }
+  </script>
 </html>

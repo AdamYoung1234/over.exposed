@@ -20,10 +20,14 @@ body {
   user-select: none;
 }
 
+.content.safari {
+  height: -webkit-fill-available;
+}
+
 .content {
   display: flex;
   width: 100vw;
-  min-height: -webkit-fill-available;
+  height: 100vh; 
   place-items: center;
   background-image: url('/public/background.jpg');
   background-size: cover;
@@ -43,7 +47,7 @@ h1 {
   margin-right: -15px;
 
   @media only screen and (max-width: 500px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -60,5 +64,5 @@ h1 {
 
 .footer-content {
   margin: 0;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
 }
