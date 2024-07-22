@@ -21,13 +21,6 @@
     </div>
   </body>
   <script type="text/javascript">
-    const userAgent = navigator.userAgent.toLowerCase();
-    const content = document.querySelector("div#content");
-    if (
-      userAgent.indexOf("safari") != -1 &&
-      userAgent.indexOf("chrome") == -1
-    ) {
-      content.className += " safari";
-    }
+    var a=navigator.userAgent.toLowerCase();var b=document.querySelector("div#content");if(a.indexOf("safari")!=-1&&a.indexOf("chrome")==-1){b.className+=" safari"}
   </script>
 </html>
