@@ -15,7 +15,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
 
-  background-image: url('background.jpg');
+  background-image: url('/public/background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
